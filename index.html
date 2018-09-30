@@ -6,117 +6,132 @@
       <!--Import materialize.css-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link rel="stylesheet" href="main.css" type="text/css">
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>MI PRIMERA PAGINA</title>
     </head>
-<!-- Seccion 1: barra de navegacion-->
-    <body>
-      <div class="navbar-fixed">
-        <nav class="deep-purple darken-4">
-          <div class="container">
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo">
-                <div style=" font-family: Georgia, 'Times New Roman', serif;">
-                    <span class="blue-text">
-                      <span class="caption center-align"> 
-                        ALEX SANCHEZ
-                      </span>
-                    </span>
-                </div>
-              </a>
-              <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-                <i class="material-icons">
-                    <span class="blue-text">menu</span>
-                </i>
-              </a>
-              </a>
-              <ul class="right hide-on-med-and-down">
-                <li>
-                  <a href="#Sobre mí">Sobre mi</a>
-                </li>
-                <li>
-                  <a href="#Proyectos en mente">Proyectos</a>
-                </li>
-                <li>
-                  <a href="#Contacto">Contacto</a>
-                </li>
-              </ul>
-            </div>
+
+    <body id="home" class="scrollspy">
+
+      <!-- Seccion 1: barra de navegacion-->
+
+      <section>
+        <div class="navbar-fixed">
+            <nav id="main-navbar">
+              <div class="nav-wrapper">
+                <span class="Logo">
+                    <a href="#!" class="brand-logo truncate" id="title">Alejandro Sánchez</a>
+                    <a href="#" data-target="movile-nav" class="sidenav-trigger">
+                      <i class="material-icons">menu</i>
+                    </a>
+                </span>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#sobre-mi">Sobre mi</a></li>
+                  <li><a href="#proyectos">Proyectos</a></li>
+                  <li><a href="#main-footer">Contacto</a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
-        </nav>  
-      </div>
-      <ul class="sidenav" id="mobile-nav">
-          <li>
-            <a href="#Sobre mí">Sobre mi</a>
-          </li>
-          <li>
-            <a href="#Proyectos en mente">Proyectos</a>
-          </li>
-          <li>
-            <a href="#Contacto">Contacto</a>
-          </li>
-        </ul>
-        <!--foto y datos-->
-        <section>
-          <div class="row">
-            <div class="col s8 caption center-align">
-          <div class="card">
-            <div class="card-image">
-              <img src="imagenes/fondo.jpg" alt="">
-              <span> <h3 class="caption center-align yellow-text">Sobre mí</h3></span>
-            </div>
-            <div class="card-content">
-              <p class="teal-text text-draken-3">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis non consectetur exercitationem quae iusto porro reiciendis architecto nisi. Cum, quo.
-              </p>
-            </div>
-          </div>
-          </div>
-        </div>
         </section>
-        <!--Seccion 3: Transicion de fotos-->
-        <section class="slider">
-          <ul class="slides">
-            <li>
-              <img src="imagenes/pato.jpg"> 
-              <div class="caption center-align yellow-text">
-                <h3>Mi animal favorito es el pato</h3>
-                <h5 class="light black-text text-lighten-3 hide-on-small-only">Hola, soy un pato! Quiero decir, cuack!</h5>
-              </div>
-            </li>
-            <li>
-              <img src="imagenes/anime.jpg"> 
-              <div class="caption left-align purple-text">
-                <h3>Mi anime favorito es assassination classroom</h3>
-                <h5 class="light orange-text text-darken-3 hide-on-small-only">Hola, soy un anime!</h5>
-            </div>
-            </li>
-            <li>
-              <img src="imagenes/juego.png"> 
-              <div class="caption left-align black-text">
-                <h3>Y mi juego favorito el Hearthstone</h3>
-                <h5 class="light green-text text-accent-3 hide-on-small-only">Oh no, voy a perder D:</h5>
-              </div>
-            </li>
+        <ul class="sidenav" id="movile-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#main-footer">Contacto</a></li>
           </ul>
+
+        <!-- Seccion 2: Sobre Mí-->
+
+        <section class="About-Me">
+          <div class="center-align">
+            <div class="row">
+              <div class="col s12 m4 offset-m4">
+                <div class="card">
+                  <div class="card-panel hoverable grey lighten-3">
+                    <div id="sobre-mi" class="card-image">
+                      <img class="responsive-img" src="imagenes/yo.jpg">
+                      <span class="card-title">Sobre Mí</span>
+                      </div>
+                      <div class="card-content hoverable grey-lighten-3 scrollspy">
+                        <h5>Me llamo Alejandro Sánchez Makane y soy un estudiante de la <abbr title="Escuela Técnica Superior de Ingeniería de Sistemas Informáticos">ETSISI</abbr>. Este año me he propuesto aprender diseño web entre otras cosas y está será mi primera página.</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <!--Seccion 3: Proyectos-->
+
+        <section id="proyectos" class="section section-icons grey lighten-4 center scrollspy">
+          <div class="container">
+            <h4 class="text-align center">Proyectos en mente</h4>
+            <div class="row">
+                <div class="col s12 m4">
+                  <div class="card-panel">
+                  <i class="material-icons large teal-text">gamepad</i>
+                  <h5>Videojuegos</h5>
+                  <p>Me gustaría crear un juego sencillo desde cero usando Unity siguiendo los hitos de CoreDumped.</p>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="card-panel">
+                    <i class="material-icons large teal-text">devices</i>
+                    <h5>Lenguajes de programacion</h5>
+                    <p>Estoy empezando a estudiar python y quiero empezar con android para hacer alguna aplicacion movil pequeña.</p>
+                  </div>
+                </div>
+                <div class="col s12 m4">
+                  <div class="card-panel">
+                    <i class="material-icons large teal-text">web</i>
+                    <h5>Diseño Web</h5>
+                    <p>A partir de estos hitos y poniendo de mi parte estoy aprendiendo a diseñar paginas web. Esta no será la ultima :)</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Contactar y pie de pagina-->
+
+        <section id="Pie-de-pagina" class="section section-follow teal darken-2 white-text center">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h3>Contacta conmigo</h3>
+                <p>Solo uso telegram pero estoy bastante atento a este. También tengo <abbr title="sandroxblue@gmail.com">correo electronico</abbr> aunque no suelo mirarlo tanto.</p>
+                <a href="https://t.me/sandroxb" target="_blank" class="white-text">
+                  <i class="fab fa-telegram fa-4x" aria-hidden="true"></i>
+                </a>
+              <a href="https://github.com/sandroxblue" target="_blank" class="white-text">
+                <i class="fab fa-github fa-4x" aria-hidden="true"></i>
+              </a>
+              </div>
+            </div>
+          </div>
+          <footer id="main-footer">
+              <p>Copyright &copy 2018; Alejandro Sánchez</p>
+          </footer>
+        </section>
+
+        <!--Boton-->
+        <div class="fixed-action-btn">
+            <a href="#home" class="btn-floating btn-large red">
+              <i class="large material-icons">arrow_upward</i>
+            </a>
+          </div>
+                
       <!--JavaScript at end of body for optimized loading-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
       </script>
-
       <script>
-      //sidenav 
-      const sideNav = document.querySelector('.sidenav');
-      M.Sidenav.init(sideNav, {});
-      //slider
-      const slider = document.querySelector('.slider');
-      M.Slider.init(slider, {
-        indicators: true,
-        height: 500,
-        transition: 500,
-        interval: 6000
-      });  
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav,{})
       </script>
 
     </body>

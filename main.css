@@ -1,0 +1,36 @@
+.About-Me{
+    background-image: url('imagenes/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    min-height:600px;
+}
+
+#main-navbar{
+    background-color:#35424a;
+}
+
+#main-navbar a{
+    color:orange;
+}
+
+.Logo{
+    padding:20%;
+}
+
+#main-footer{
+    background-color:#35424a !important;
+    color:#fff !important;
+    text-align:center !important;
+    padding:20px !important;
+    margin-top:40px !important;
+}
+
+#Pie-de-pagina{
+    font-family:serif !important;
+    font-size:20px;
+}
+
+#Pie-de-pagina .fa-4x{
+    margin:5px 10px;
+}
