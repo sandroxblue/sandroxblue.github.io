@@ -14,8 +14,9 @@
     color:orange;
 }
 
+
 .Logo{
-    padding:20%;
+    text-align:center;
 }
 
 #main-footer{
@@ -27,7 +28,7 @@
 }
 
 #Pie-de-pagina{
-    font-family:serif !important;
+    font-family:Arial, Helvetica, sans-serif !important;
     font-size:20px;
 }
 
