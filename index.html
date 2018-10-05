@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="main.css" type="text/css">
       <script src="https://code.jquery.com/jquery-latest.js"></script>
       <script src="subir.js"></script>
+      <script src="btn.js"></script>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <title>MI PRIMERA PAGINA</title>
@@ -17,6 +18,7 @@
     <body id="home" class="scrollspy">
 
       <!--Boton-->
+
       <span class="boton-scroll">
         <i class="small material-icons">arrow_upward</i>
       </span>
@@ -57,12 +59,12 @@
             <div class="row">
               <div class="col s12 m4 offset-m4">
                 <div class="card">
-                  <div class="card-panel hoverable grey lighten-3">
+                  <div class="tarjeta card-panel hoverable">
                     <div id="sobre-mi" class="card-image">
                       <img class="responsive-img" src="imagenes/yo.jpg">
-                      <span class="card-title">Sobre Mí</span>
+                      <span class="card-title black-text">Sobre Mí</span>
                       </div>
-                      <div class="card-content hoverable grey-lighten-3 scrollspy">
+                      <div class="contenido-tarjeta card-content hoverable scrollspy">
                         <h5>Me llamo Alejandro Sánchez Makane y soy un estudiante de la <abbr title="Escuela Técnica Superior de Ingeniería de Sistemas Informáticos">ETSISI</abbr>. Este año me he propuesto aprender diseño web entre otras cosas y está será mi primera página.</h5>
                       </div>
                     </div>
@@ -104,6 +106,15 @@
           </div>
         </section>
 
+        <!--Seccion 4: boton de codepen-->
+        <section class="codepen-boton">
+          <div class="main row">
+            <h3 class="text-align center brown-text">Dicen que si pulsas a este botón te convalidan un crédito</h3>
+            <div class="sub-main col s12 m2 offset-m5">
+              <button class="boton-inutil truncate">Creditos gratis</button>
+            </div>
+          </div>
+        </section>
         <!--Contactar y pie de pagina-->
 
         <section id="Pie-de-pagina" class="section section-follow teal darken-2 white-text center">
@@ -133,6 +144,6 @@
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav,{})
       </script>
-  
+      
     </body>
   </html>

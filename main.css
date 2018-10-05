@@ -7,7 +7,7 @@
 }
 
 #main-navbar{
-    background-color:#35424a;
+    background-color:#4A463B;
 }
 
 #main-navbar a{
@@ -19,8 +19,12 @@
     text-align:center;
 }
 
+.contenido-tarjeta{
+    color:black ;
+}
+
 #main-footer{
-    background-color:#35424a !important;
+    background-color:#4A463B !important;
     color:#fff !important;
     text-align:center !important;
     padding:20px !important;
@@ -39,11 +43,54 @@
 .boton-scroll{
     display: none;
     padding:20px;
-    background:#333;
+    background:none;
     font-size:10px;
-    color:#fff;
+    color:#FF9800;
     cursor:pointer;
     position:fixed;
     bottom:20px;
     right:20px;
 }
+
+button{
+    color:#fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main{
+    width:100%;
+}
+  
+.sub-main{
+    width: 100%;
+    margin:20px;
+}
+
+.boton-inutil{
+    text-align: center;
+    cursor: pointer;
+    font-size:24px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+  .boton-inutil {
+    padding:20px 60px;
+    outline: none;
+    background-color: #27ae60;
+    border: none;
+    border-radius:5px;
+    box-shadow: 0 9px #95a5a6;
+}
+  
+  .boton-inutil:hover{
+    background-color: #2ecc71;
+}
+  
+.boton-inutil:active {
+    background-color: #2ecc71;
+    box-shadow: 0 5px #95a5a6;
+    transform: translateY(4px);
+}
+  
