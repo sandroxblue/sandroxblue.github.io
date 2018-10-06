@@ -75,7 +75,21 @@
           </div>
         </section>
 
-        <!--Seccion 3: Proyectos-->
+        <!--Seccion 3: Estrellas Github-->
+
+        <section class="section teal center">
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <h4 id="starRating" class="white-text">
+                  Estrellas en GitHub:
+                </h4>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Seccion 4: Proyectos-->
 
         <section id="proyectos" class="section section-icons grey lighten-4 center scrollspy">
           <div class="container">
@@ -106,15 +120,16 @@
           </div>
         </section>
 
-        <!--Seccion 4: boton de codepen-->
+        <!--Seccion 5: boton de codepen-->
+
         <section class="codepen-boton">
           <div class="main row">
-            <h3 class="text-align center brown-text">Dicen que si pulsas a este botón te convalidan un crédito</h3>
             <div class="sub-main col s12 m4 offset-m4">
               <button class="boton-inutil truncate">Creditos gratis</button>
             </div>
           </div>
         </section>
+
         <!--Contactar y pie de pagina-->
 
         <section id="Pie-de-pagina" class="section section-follow teal darken-2 white-text center">
@@ -144,6 +159,42 @@
         const sideNav = document.querySelector('.sidenav');
         M.Sidenav.init(sideNav,{})
       </script>
+
+      <script>
+          document.addEventListener("DOMContentLoaded", function(){
+            getEstrellas();
+          });
+
+          function getEstrellas(){
+            loadJSON('https://api.github.com/repos/sandroxblue/sandroxblue.github.io',
+              function(data) { console.log(data); },
+              function(xhr) { console.error(xhr); }
+              );
+          }
+
+          function loadJSON(path, success, error)
+          {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function()
+            {
+              if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                  if (success){
+                    var estrellas =JSON.parse(xhr.responseText);
+                    console.log(estrellas.stargazers_count);
+                    document.getElementById("starRating").innerHTML= estrellas.stargazers_count + " <i class=\"fas fa-star\"></i>";
+                    $("i.loader").remove();
+                  }
+                } else {
+                  if (error)
+                    error(xhr);
+                }
+              }
+            };
+            xhr.open("GET", path, true);
+            xhr.send();
+          }
+        </script>
       
     </body>
   </html>
